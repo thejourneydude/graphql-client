@@ -140,7 +140,8 @@ module GraphQL
           rescue NameError
             fragment = nil
           end
-
+          puts "fragment" * 1000
+          puts fragment
           case fragment
           when FragmentDefinition
             # We found the fragment definition that this fragment spread belongs to.
